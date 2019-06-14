@@ -15,7 +15,8 @@ config :fizzbot, FizzbotWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "i0sPneSmgxHd3hcdmYt/BZyWILQAoCY+37nsjeCTYiKF5lG3Hm7b6Z/XeO85O1qv",
   render_errors: [view: FizzbotWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Fizzbot.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Fizzbot.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [signing_salt: "i0sPneSmgxHd3hcdmYt"]
 
 # Configures Elixir's Logger
 config :logger, :console,

@@ -1,6 +1,7 @@
 defmodule FizzbotWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :fizzbot
 
+  socket "/live", Phoenix.LiveView.Socket
   socket "/socket", FizzbotWeb.UserSocket,
     websocket: true,
     longpoll: false

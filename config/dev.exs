@@ -61,7 +61,8 @@ config :fizzbot, FizzbotWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/fizzbot_web/{live,views}/.*(ex)$",
-      ~r"lib/fizzbot_web/templates/.*(eex)$"
+      ~r"lib/fizzbot_web/templates/.*(eex)$",
+      ~r{lib/fizzbot_web/live/.*(ex)$}
     ]
   ]
 
